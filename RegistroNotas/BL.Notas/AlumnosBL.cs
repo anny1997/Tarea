@@ -70,6 +70,6 @@ namespace BL.Notas
             public string NumeroIdentidad { get; set; }
             public string Curso { get; set; }
             public int AnioCursado { get; set; }
-            public bool Activo { get; set; }
+            
         }
 }
