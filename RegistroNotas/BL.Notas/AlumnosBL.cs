@@ -45,7 +45,18 @@ namespace BL.Notas
 
                 ListaAlumnos.Add(alumno3);
 
-            }
+                var alumno4 = new Alumno();
+                alumno4.Id = 4;
+                alumno4.Nombre = "Sintia lopez";
+                alumno4.NumeroIdentidad = "0501-1994-05886";
+                alumno4.Curso = "2 Curso";
+                alumno4.AnioCursado = 2;
+
+
+                ListaAlumnos.Add(alumno4);
+
+
+        }
 
             public BindingList<Alumno> ObtenerAlumnos()
             {
