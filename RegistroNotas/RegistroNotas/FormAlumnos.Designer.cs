@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label activoLabel;
             System.Windows.Forms.Label anioCursadoLabel;
             System.Windows.Forms.Label cursoLabel;
             System.Windows.Forms.Label idLabel;
@@ -50,13 +49,11 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.listaAlumnosBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.activoCheckBox = new System.Windows.Forms.CheckBox();
             this.anioCursadoTextBox = new System.Windows.Forms.TextBox();
             this.cursoTextBox = new System.Windows.Forms.TextBox();
             this.idTextBox = new System.Windows.Forms.TextBox();
             this.nombreTextBox = new System.Windows.Forms.TextBox();
             this.numeroIdentidadTextBox = new System.Windows.Forms.TextBox();
-            activoLabel = new System.Windows.Forms.Label();
             anioCursadoLabel = new System.Windows.Forms.Label();
             cursoLabel = new System.Windows.Forms.Label();
             idLabel = new System.Windows.Forms.Label();
@@ -66,15 +63,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.listaAlumnosBindingNavigator)).BeginInit();
             this.listaAlumnosBindingNavigator.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // activoLabel
-            // 
-            activoLabel.AutoSize = true;
-            activoLabel.Location = new System.Drawing.Point(39, 163);
-            activoLabel.Name = "activoLabel";
-            activoLabel.Size = new System.Drawing.Size(40, 13);
-            activoLabel.TabIndex = 1;
-            activoLabel.Text = "Activo:";
             // 
             // anioCursadoLabel
             // 
@@ -249,16 +237,6 @@
             this.listaAlumnosBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.listaAlumnosBindingNavigatorSaveItem.Text = "Guardar datos";
             // 
-            // activoCheckBox
-            // 
-            this.activoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.listaAlumnosBindingSource, "Activo", true));
-            this.activoCheckBox.Location = new System.Drawing.Point(139, 158);
-            this.activoCheckBox.Name = "activoCheckBox";
-            this.activoCheckBox.Size = new System.Drawing.Size(104, 24);
-            this.activoCheckBox.TabIndex = 2;
-            this.activoCheckBox.Text = "checkBox1";
-            this.activoCheckBox.UseVisualStyleBackColor = true;
-            // 
             // anioCursadoTextBox
             // 
             this.anioCursadoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaAlumnosBindingSource, "AnioCursado", true));
@@ -304,8 +282,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(371, 261);
-            this.Controls.Add(activoLabel);
-            this.Controls.Add(this.activoCheckBox);
             this.Controls.Add(anioCursadoLabel);
             this.Controls.Add(this.anioCursadoTextBox);
             this.Controls.Add(cursoLabel);
@@ -344,7 +320,6 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton listaAlumnosBindingNavigatorSaveItem;
-        private System.Windows.Forms.CheckBox activoCheckBox;
         private System.Windows.Forms.TextBox anioCursadoTextBox;
         private System.Windows.Forms.TextBox cursoTextBox;
         private System.Windows.Forms.TextBox idTextBox;
